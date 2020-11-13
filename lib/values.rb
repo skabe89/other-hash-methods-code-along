@@ -10,4 +10,9 @@ require 'pry'
 
 def get_the_values(groceries)
   #code your solution here!
+  all_items = []
+  groceries.each do |key, value|
+    value.map{|i| all_items << i}
+  end
+  all_items
 end

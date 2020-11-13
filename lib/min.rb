@@ -10,4 +10,9 @@ require 'pry'
 
 def get_the_min(groceries)
   #code your solution here!
+  place = []
+  groceries.each do |key, value|
+    value.each{|i| place << i}
+  end
+  place.sort[0]
 end
